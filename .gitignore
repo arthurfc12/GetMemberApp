@@ -1,5 +1,6 @@
 agent/keys/*.json
-.env
+app/flutter_application_1/.env
+
 # -----------------------------
 # OS / Editor junk
 # -----------------------------

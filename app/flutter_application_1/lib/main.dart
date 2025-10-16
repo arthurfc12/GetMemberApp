@@ -12,10 +12,16 @@ import 'package:flutter/services.dart' show Clipboard, ClipboardData;
 
 // <-- flutterfire configure generated this file
 import 'firebase_options.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
+
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const SplashApp());
+  await dotenv.load(fileName: ".env");
+
 
   String? initError;
   try {
